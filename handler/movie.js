@@ -18,7 +18,7 @@ async function fetchAllMovie(req,res){
 }
 async function addMovie(req,res){
     const movieData = req.body;
-    console.log(movieData)
+    // console.log(movieData)
     let movie = new Movie(movieData)
     await movie.save();
     return res.send({
